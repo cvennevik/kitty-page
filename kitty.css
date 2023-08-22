@@ -1,0 +1,40 @@
+html {
+    background-color: aquamarine;
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#button-container > button {
+    background-color: orange;
+    border-color: yellow;
+    font-size: 36px;
+    padding: 10px;
+}
+
+#kitty-container {
+    display: flex;
+    justify-content: center;
+}
+
+#kitty-container > .kitty {
+    font-size: 72px;
+}
+
+
+@keyframes wiggle {
+    0% {rotate: 0deg;}
+    25% {rotate: -30deg;}
+    50% {rotate: 0deg;}
+    75% {rotate: 30deg;}
+    100% {rotate: 0deg;}
+}
+
+.wiggling > .kitty {
+    animation-name: wiggle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
